@@ -11,5 +11,6 @@
     <module>cup-jmx</module>
     <module>cup-digester</module>
     <module>cup-build</module>
+    <module>cup-ratelimiter</module>
   </modules>
 </project>
