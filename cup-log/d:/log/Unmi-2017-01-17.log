@@ -1,0 +1,6 @@
+15:33:11.079 [main] DEBUG com.aben.cup.log.logging.LogFactory - Using SLF4J as the default logging framework
+15:33:11.081 [main] ERROR com.aben.cup.sample.log.LogTest - -----log test !-----
+15:33:43.360 [main] DEBUG com.aben.cup.log.logging.LogFactory - Using SLF4J as the default logging framework
+15:33:43.363 [main] ERROR com.aben.cup.sample.log.LogTest - -----log test !-----
+15:41:46.438 [main] DEBUG com.aben.cup.log.logging.LogFactory - Using SLF4J as the default logging framework
+15:41:46.442 [main] ERROR com.aben.cup.sample.log.LogTest - -----log test !-----

@@ -18,6 +18,7 @@ package com.aben.cup.log.logging;
 
 import com.aben.cup.log.logging.internal.CommonsLoggerFactory;
 import com.aben.cup.log.logging.internal.JdkLoggerFactory;
+import com.aben.cup.log.logging.internal.Log4JLoggerFactory;
 import com.aben.cup.log.logging.internal.Slf4JLoggerFactory;
 
 /**
@@ -45,12 +46,17 @@ public abstract class LogFactory {
              f.newInstance(name).debug("Using SLF4J as the default logging framework");
              defaultFactory = f;
          } catch (Throwable t1) {
-             try {
-                 f = new CommonsLoggerFactory();
+        	 try {
+                 f = new Log4JLoggerFactory();
                  f.newInstance(name).debug("Using Log4J as the default logging framework");
              } catch (Throwable t2) {
-                 f = new JdkLoggerFactory();
-                 f.newInstance(name).debug("Using java.util.logging as the default logging framework");
+            	 try {
+                     f = new CommonsLoggerFactory();
+                     f.newInstance(name).debug("Using commonsLogger as the default logging framework");
+                 } catch (Throwable t3) {
+                     f = new JdkLoggerFactory();
+                     f.newInstance(name).debug("Using java.util.logging as the default logging framework");
+                 }
              }
          }
 

@@ -1,0 +1,10 @@
+12:13:14.870 [main] DEBUG com.aben.cup.log.logging.LogFactory - Using SLF4J as the default logging framework
+12:13:14.923 [main] DEBUG com.aben.cup.jmx.modeler.Registry - Creating MBeanServer48
+12:13:14.924 [main] DEBUG com.aben.cup.jmx.modeler.Registry - Managed= domianName:name=router
+12:13:14.924 [main] DEBUG com.aben.cup.jmx.modeler.Registry - Looking for descriptor 
+12:13:14.925 [main] DEBUG com.aben.cup.jmx.modeler.Registry - Found file:/public/workspace_github/workspace_cup/cup/cup-jmx/target/test-classes/com/aben/cup/sample/jmx/mbeans-descriptors.xml
+12:13:14.936 [main] ERROR com.aben.cup.jmx.modeler.Registry - Error loading file:/public/workspace_github/workspace_cup/cup/cup-jmx/target/test-classes/com/aben/cup/sample/jmx/mbeans-descriptors.xml
+12:13:14.939 [main] DEBUG com.aben.cup.jmx.modeler.Registry - Introspecting 
+12:13:14.943 [main] DEBUG com.aben.cup.jmx.modeler.modules.MbeansDescriptorsIntrospectionSource - Introspected attribute iPS public java.lang.String[] com.aben.cup.sample.jmx.Router.getIPS() null
+12:13:14.944 [main] DEBUG com.aben.cup.jmx.modeler.modules.MbeansDescriptorsIntrospectionSource - Setting name: com.aben.cup.sample.jmx.Router
+12:13:14.945 [main] DEBUG com.aben.cup.jmx.modeler.BaseModelMBean - preRegister com.aben.cup.sample.jmx.Router@26ef028b domianName:name=router
