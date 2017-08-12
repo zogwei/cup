@@ -42,13 +42,13 @@ public abstract class LogFactory {
     	 final String name = LogFactory.class.getName();
     	 LogFactory f;
          try {
-             f = new Slf4JLoggerFactory(true);
-             f.newInstance(name).debug("Using SLF4J as the default logging framework");
+        	 f = new Log4JLoggerFactory();
+             f.newInstance(name).debug("Using Log4J as the default logging framework");
              defaultFactory = f;
          } catch (Throwable t1) {
         	 try {
-                 f = new Log4JLoggerFactory();
-                 f.newInstance(name).debug("Using Log4J as the default logging framework");
+        		 f = new Slf4JLoggerFactory(true);
+                 f.newInstance(name).debug("Using SLF4J as the default logging framework");
              } catch (Throwable t2) {
             	 try {
                      f = new CommonsLoggerFactory();

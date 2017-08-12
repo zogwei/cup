@@ -5,11 +5,13 @@ import com.aben.cup.log.logging.LogFactory;
 
 public class LogTest {
 
+	private final static Log log = LogFactory.getLog(LogTest.class);
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		  Log log = LogFactory.getLog(LogTest.class);
+		  
 		  log.error("-----log test !-----");
 	}
 
